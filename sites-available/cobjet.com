@@ -25,13 +25,13 @@ server {
     root /home/www/cobjet.com/html;
     index index.php index.html index.htm;
 
-    location ~ \.php$ {
-
-fastcgi_pass unix:/var/run/php5-fpm.sock;
-        include fastcgi_params;
-        fastcgi_param HTTPS on;
-
-    }
+#    location ~ \.php$ {
+#
+#fastcgi_pass unix:/var/run/php5-fpm.sock;
+#        include fastcgi_params;
+#        fastcgi_param HTTPS on;
+#
+#    }
 
     location ~ /\. {
         deny all;
