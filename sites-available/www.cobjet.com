@@ -3,7 +3,8 @@ server {
     server_name www.cobjet.com;
     ssl on;
     ssl_session_timeout 5m;
-#    ssl_stapling on;
+    ssl_stapling on;
+    ssl_stapling_verify on;
     ssl_certificate        /etc/ssl/cobjet/cobjet.com.crt;
     ssl_certificate_key    /etc/ssl/cobjet/cobjet.com.key;
 
