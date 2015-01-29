@@ -3,8 +3,8 @@ server {
     server_name www.cobjet.com;
     ssl on;
     ssl_session_timeout 5m;
-    ssl_stapling on;
-    ssl_stapling_verify on;
+#    ssl_stapling on;
+#    ssl_stapling_verify on;
     ssl_certificate        /etc/ssl/cobjet/cobjet.com.crt;
     ssl_certificate_key    /etc/ssl/cobjet/cobjet.com.key;
 
@@ -42,7 +42,7 @@ server {
         proxy_set_header HOST $http_host;
         proxy_set_header X-NginX-Proxy true;
 
-        proxy_pass http://127.0.0.1:8080;
+        proxy_pass http://127.0.0.1:8888;
         proxy_redirect off;
     }
 

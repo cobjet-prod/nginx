@@ -1,0 +1,1 @@
+../sites-available/wix.cobjet.com

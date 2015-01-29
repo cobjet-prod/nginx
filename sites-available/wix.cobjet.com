@@ -1,6 +1,6 @@
 server {
     listen   443 ssl spdy;
-    server_name cobjet.com;
+    server_name wix.cobjet.com;
     ssl on;
     ssl_session_timeout 5m;
 #    ssl_stapling on;
@@ -23,7 +23,7 @@ server {
 
  
 
-    root /home/www/cobjet.com/html;
+    root /home/www/wix.cobjet.com/html;
     index index.php index.html index.htm;
 
 #    location ~ \.php$ {
@@ -47,8 +47,8 @@ server {
     }
 
 
-    access_log /home/www/shared/log/cobjet.com-access.log;
-    error_log /home/www/shared/log/cobjet.com-error.log;
+    access_log /home/www/shared/log/wix.cobjet.com-access.log;
+    error_log /home/www/shared/log/wix.cobjet.com-error.log;
     error_page 404 /404.html;
 
 }
